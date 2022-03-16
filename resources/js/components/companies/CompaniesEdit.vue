@@ -6,6 +6,11 @@
         </p>
       </div>
     </div>
+    <div class="flex place-content-end mb-4">
+        <div class="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 cursor-pointer">
+            <router-link :to="{ name: 'companies.index' }" class="text-sm font-medium">Back</router-link>
+        </div>
+    </div>
     <form class="space-y-6" v-on:submit.prevent="saveCompany">
         <div class="space-y-4 rounded-md shadow-sm">
             <div>
